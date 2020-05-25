@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Rainer M Krug, Rainer@uzh.ch" />
+  <title>Protocol for Preparation of a Data Deposit Package for Zenodo</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Protocol for Preparation of a Data Deposit Package for Zenodo</h1>
+<p class="subtitle">DRAFT</p>
+<p class="author">Rainer M Krug, Rainer@uzh.ch</p>
+<p class="date">2020-05-25 - pandoc 2.9.2.1</p>
+</header>
+<hr />
+<h2 id="to-decide"><span style="color:red">To Decide</span></h2>
+<ul>
+<li><strong>include DOI and bibliometric data into emlScheme?</strong> - new tab would be best</li>
+<li><strong>export to <code>eml</code>?</strong> - possible, but needs some work and considerations. Export will <strong>not</strong> be roundtrip possible - import of <code>eml</code> will not result in identical <code>emeScheme</code> metadata.</li>
+<li><strong>ZENODO as recommended Repo?</strong> - create community to collect deposits?</li>
+</ul>
+<hr />
+<h2 id="preparation-workflow">Preparation workflow</h2>
+<p>This workflow does not need to be done in the exact order, although some steps are required before others. Each step will result in a document which needs to be included in the data deposit. During this workflow, a document is created, which accompanies the data deposit and describes all the files. <span style="color:blue">This document should be preferably in <code>html</code> format (easily readable from all browsers). Alternatives are <code>pdf</code> or <code>md</code> (markdown) files. The document should be named <code>index.html</code>, <code>index.pdf</code> or <code>index.md</code> depending on the format. Preferably, <code>.html</code> and <code>.pdf</code> should be included</span> Information is structured in specific sections, which are specified in <span style="color:red">red</span>.</p>
+<ul class="task-list">
+<li><p><input type="checkbox" disabled="" />
+Prepare data deposit on Zenodo Zenodo requires a small set of bibliographic metadata and has a range of optional metadata. The more accurate this data is entered, the easier findable it will be.<br />
+The data stored in Zenodo should be documented. The <code>index.</code> should contain the following metadata in a section:</p><ul class="task-list">
+<li><input type="checkbox" disabled="" />
+Zenodo <span style="color:red">Community</span>: <strong>IEU UZH</strong> <span style="color:red">NEEDS TO BE CREATED</span> and others when appropriate</li>
+<li><input type="checkbox" disabled="" />
+Upload <span style="color:red">Type</span>: Usually Dataset, others require additional info, please specify as well</li>
+<li><input type="checkbox" disabled="" />
+<span style="color:red">DOI</span> - Reserve it by clicking the <code>Reserve DOI button</code>. This will reserve the DOI, and you can add it to the documentation and publications.</li>
+<li><input type="checkbox" disabled="" />
+<span style="color:red">Publication date</span></li>
+<li><input type="checkbox" disabled="" />
+<span style="color:red">Title</span></li>
+<li><input type="checkbox" disabled="" />
+<span style="color:red">Authors</span>, including affiliation and ORCID (if you don’t have one, get one!)</li>
+<li><input type="checkbox" disabled="" />
+<span style="color:red">Description</span> - a short description of what is deposited</li>
+<li><input type="checkbox" disabled="" />
+<span style="color:red">Version</span> - if this is a versiond DOI, e.g. daily updated data, each day could get the date (2020.12.15) as a version, and the whole dataset would have one DOI, which would always point to the latest deposit, and each day would also have in addition its own DOI</li>
+<li><input type="checkbox" disabled="" />
+<span style="color:red">Language</span></li>
+<li><input type="checkbox" disabled="" />
+<span style="color:red">Keywords</span></li>
+<li><input type="checkbox" disabled="" />
+<span style="color:red">Additional notes</span></li>
+<li><input type="checkbox" disabled="" />
+<span style="color:red">are there other optional fields which we should use?</span></li>
+</ul></li>
+<li><p><input type="checkbox" disabled="" />
+Section called <span style="color:red">Files</span> explaining the files in the deposit</p></li>
+<li><p><input type="checkbox" disabled="" />
+Detailed descriptions of methods in a document <code>methods.</code> included as pdf or text file. This could also be a or part of a publications. This desription can also be in the <code>index.</code> document in a section called <span style="color:red">Methods</span><br />
+</p></li>
+<li><p><input type="checkbox" disabled="" />
+data files in open formats (e.g. csv)</p></li>
+<li><p><input type="checkbox" disabled="" />
+emeScheme metadata filled in <code>emeScheme.xlsx</code> <span style="color:red">Yes I know - not an open format - but OK?</span></p></li>
+<li><p><input type="checkbox" disabled="" />
+emeScheme metadata exported to xml <code>emeScheme.xml</code></p></li>
+</ul>
+<hr />
+<h2 id="conversion-of-emescheme.xlsx-to-eml-format">Conversion of <code>emeScheme.xlsx</code> to <code>eml</code> format</h2>
+<p><span style="color:red">This we have to decide.</span></p>
+<hr />
+<h2 id="packaging---all-files-in-one-folder-for-packaging">Packaging - all files in one folder for packaging</h2>
+<ul class="task-list">
+<li><input type="checkbox" disabled="" />
+<code>index.html</code></li>
+<li><input type="checkbox" disabled="" />
+<code>emeScheme.xlsx</code></li>
+<li><input type="checkbox" disabled="" />
+<code>emeScheme.xml</code></li>
+<li><input type="checkbox" disabled="" />
+data file(s)</li>
+</ul>
+<hr />
+<ul class="task-list">
+<li><input type="checkbox" disabled="" />
+Submit to <span style="color:red">whom?</span> for checking</li>
+<li><input type="checkbox" disabled="" />
+Submit to <span style="color:red">whom?</span> approval</li>
+</ul>
+<h2 id="upload-to-zenodo-or-other-repository">Upload to Zenodo or other Repository</h2>
+<hr />
+<h2 id="acceptance-into-ieu-uzh-community">Acceptance into IEU UZH Community</h2>
+<p><span style="color:red">Who will be the community admin? This can not easily be transferred - we should have one email zenodo.community@ieu.uzh.ch ?</span></p>
+</body>
+</html>
