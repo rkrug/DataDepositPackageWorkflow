@@ -18,7 +18,7 @@ description: |
 -------------
 
 ## Preparation workflow
-This workflow does not need to be done in the exact order, although some steps are required before others. Each step will result in a document which needs to be included in the data deposit. During this workflow, a document is created, which accompanies the data deposit and describes all the files. <span style="color:blue">This document should be preferably in `html` format (easily readable from all browsers). Alternatives are `pdf` or `md` (markdown) files. The document should be named `index.html`, `index.pdf` or `index.md` depending on the format. Preferably, `.html` and `.pdf` should be included</span> Information is structured in specific sections, which are specified in <span style="color:red">red</span>.
+This checklist does not need to be done in the exact order, although some steps are required before others. During working through this checklist, a document is created, which accompanies the data deposit and describes all the files. <span style="color:blue">This document should be preferably in `html` format (easily readable from all browsers). Alternatives are `pdf` or `md` (markdown) files. The document should be named `index.html`, `index.pdf` or `index.md` depending on the format. Preferably, `.html` and `.pdf` should be included</span> Information is structured in specific sections, which are specified in <span style="color:red">red</span>.
 
 - [ ] Prepare data deposit on Zenodo
 Zenodo requires a small set of bibliographic metadata and has a range of optional metadata. The more accurate this data is entered, the easier findable it will be.  
