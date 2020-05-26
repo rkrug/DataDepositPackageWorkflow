@@ -16,7 +16,7 @@ all: clean html pdf
 
 clean: clean_html clean_pdf
 
-preview: preview_html
+preview: preview_html preview_pdf
 
 preview_html: html
 	open $(HTML)

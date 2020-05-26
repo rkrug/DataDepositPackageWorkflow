@@ -23,18 +23,19 @@
 <h1 class="title">Protocol for Preparation of a Data Deposit Package for Zenodo</h1>
 <p class="subtitle">DRAFT</p>
 <p class="author">Rainer M Krug, Rainer@uzh.ch</p>
-<p class="date">2020-05-25 - pandoc 2.9.2.1</p>
+<p class="date">2020-05-26 - pandoc 2.9.2.1</p>
 </header>
 <hr />
 <h2 id="to-decide"><span style="color:red">To Decide</span></h2>
 <ul>
-<li><strong>include DOI and bibliometric data into emlScheme?</strong> - new tab would be best</li>
+<li><strong>include DOI and bibliometric data into emeScheme?</strong> - new tab would be best</li>
 <li><strong>export to <code>eml</code>?</strong> - possible, but needs some work and considerations. Export will <strong>not</strong> be roundtrip possible - import of <code>eml</code> will not result in identical <code>emeScheme</code> metadata.</li>
 <li><strong>ZENODO as recommended Repo?</strong> - create community to collect deposits?</li>
 </ul>
 <hr />
 <h2 id="preparation-workflow">Preparation workflow</h2>
 <p>This checklist does not need to be done in the exact order, although some steps are required before others. During working through this checklist, a document is created, which accompanies the data deposit and describes all the files. <span style="color:blue">This document should be preferably in <code>html</code> format (easily readable from all browsers). Alternatives are <code>pdf</code> or <code>md</code> (markdown) files. The document should be named <code>index.html</code>, <code>index.pdf</code> or <code>index.md</code> depending on the format. Preferably, <code>.html</code> and <code>.pdf</code> should be included</span> Information is structured in specific sections, which are specified in <span style="color:red">red</span>.</p>
+<p>One important point to consider is Intelectual Property Rights. If you think, it is advisable to protect IPs, you should consider contacting the relevant offices at the University for further information as publication under an open license may make it impossible to register IPs afterwards.</p>
 <ul class="task-list">
 <li><p><input type="checkbox" disabled="" />
 Prepare data deposit on Zenodo Zenodo requires a small set of bibliographic metadata and has a range of optional metadata. The more accurate this data is entered, the easier findable it will be.<br />
@@ -50,7 +51,7 @@ Upload <span style="color:red">Type</span>: Usually Dataset, others require addi
 <li><input type="checkbox" disabled="" />
 <span style="color:red">Title</span></li>
 <li><input type="checkbox" disabled="" />
-<span style="color:red">Authors</span>, including affiliation and ORCID (if you don’t have one, get one!)</li>
+<span style="color:red">Authors</span>, including affiliation and ORCID (if you don’t have one, get one!) and their contribution. Contribution should follow<a href="https://casrai.org/credit/">CRediT – Contributor Roles Taxonomy</a></li>
 <li><input type="checkbox" disabled="" />
 <span style="color:red">Description</span> - a short description of what is deposited</li>
 <li><input type="checkbox" disabled="" />
@@ -61,6 +62,8 @@ Upload <span style="color:red">Type</span>: Usually Dataset, others require addi
 <span style="color:red">Keywords</span></li>
 <li><input type="checkbox" disabled="" />
 <span style="color:red">Additional notes</span></li>
+<li><input type="checkbox" disabled="" />
+<span style="color:red">License</span> The access right should be “Open Access” and as License the “Creative Commons Attribution 4.0 International” is highly recommended</li>
 <li><input type="checkbox" disabled="" />
 <span style="color:red">are there other optional fields which we should use?</span></li>
 </ul></li>
@@ -102,5 +105,36 @@ Submit to <span style="color:red">whom?</span> approval</li>
 <hr />
 <h2 id="acceptance-into-ieu-uzh-community">Acceptance into IEU UZH Community</h2>
 <p><span style="color:red">Who will be the community admin? This can not easily be transferred - we should have one email zenodo.community@ieu.uzh.ch ?</span></p>
+<hr />
+<h2 id="comments-from-group-meeting">Comments from Group Meeting</h2>
+<h3 id="repository">Repository</h3>
+<ul>
+<li>Owen: University repository -</li>
+<li>Gabriela - data archiving may have information (ask)</li>
+<li>Community? possibly not or yes?</li>
+</ul>
+<h3 id="general-remarks">General remarks</h3>
+<ul>
+<li>Wino: science open data Mark Robinson &amp; (Owen will keep me informed)</li>
+</ul>
+<h3 id="comments-regarding-workflow">Comments regarding Workflow</h3>
+<!-- - Check for Intellectual Property Rights necessary before publication? -->
+<!-- - add metadata: Contributions to the data package of authors (role) "credit taxonomy for contributions" https://casrai.org/credit/ -->
+<ul>
+<li>I approve deposits</li>
+<li>Maja keeps list of data packages / publications (I suggest using Zotero for this)</li>
+<li>not linked to single repository</li>
+</ul>
+<h3 id="comments-regarding-data">Comments regarding Data</h3>
+<ul>
+<li>What data MUST and CAN be published</li>
+</ul>
+<h3 id="next-steps">Next Steps</h3>
+<ul>
+<li>Zenodo size uploads</li>
+<li><strong>add bibliometric metadata to emeScheme</strong></li>
+<li><strong>create <code>index.md</code> from emeScheme</strong></li>
+<li>try it with Uriahs and Davids data</li>
+</ul>
 </body>
 </html>
