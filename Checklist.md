@@ -14,13 +14,12 @@ description: |
 - **export to `eml`?** - possible, but needs some work and considerations. Export will **not** be roundtrip possible - import of `eml` will not result in identical `emeScheme` metadata.
 - **ZENODO as recommended Repo?** - create community to collect deposits?
  
- 
 -------------
 
 ## Preparation workflow
 This checklist does not need to be done in the exact order, although some steps are required before others. During working through this checklist, a document is created, which accompanies the data deposit and describes all the files. <span style="color:blue">This document should be preferably in `html` format (easily readable from all browsers). Alternatives are `pdf` or `md` (markdown) files. The document should be named `index.html`, `index.pdf` or `index.md` depending on the format. Preferably, `.html` and `.pdf` should be included</span> Information is structured in specific sections, which are specified in <span style="color:red">red</span>.
 
-One important point to consider is Intelectual Property Rights. If you think, it is advisable to protect IPs, you should consider contacting the relevant offices at the University for further information as publication under an open license may make it impossible to register IPs afterwards. 
+Before submitting the data, one should consider **Intellectual Property** protection. Consult within your team and contact the relevant offices at the University for further information if needed. Be aware that any information that is made public, either under an open license or otherwise, can make subsequent IP registration impossible. 
 
 - [ ] Prepare data deposit on Zenodo
 Zenodo requires a small set of bibliographic metadata and has a range of optional metadata. The more accurate this data is entered, the easier findable it will be.  
@@ -31,7 +30,13 @@ The data stored in Zenodo should be documented. The `index.` should contain the 
 	- [ ] <span style="color:red">DOI</span> - Reserve it by clicking the `Reserve DOI button`. This will reserve the DOI, and you can add it to the documentation and publications.
 	- [ ] <span style="color:red">Publication date</span>
 	- [ ] <span style="color:red">Title</span>
-	- [ ] <span style="color:red">Authors</span>, including affiliation and ORCID (if you don't have one, get one!) and their contribution. Contribution should follow[ CRediT – Contributor Roles Taxonomy]( https://casrai.org/credit/)
+	- [ ] <span style="color:red">Authors</span>, including affiliation and ORCID (if you don't have one, get one!) and their contribution. Contribution should follow[ CRediT – Contributor Roles Taxonomy]( https://casrai.org/credit/)  
+	
+		| Family Name, Given Names | Affiliation | ORCID | Role | 
+		|---|---|---|---|
+		|   |  |  |  |		 
+		|   |  |  |  |		 
+		
 	- [ ] <span style="color:red">Description</span> - a short description of what is deposited
 	- [ ] <span style="color:red">Version</span> - if this is a versiond DOI, e.g. daily updated data, each day could get the date (2020.12.15) as a version, and the whole dataset would have one DOI, which would always point to the latest deposit, and each day would also have in addition its own DOI
 	- [ ] <span style="color:red">Language</span>
